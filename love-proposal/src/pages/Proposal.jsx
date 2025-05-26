@@ -7,6 +7,7 @@ export default function Proposal() {
   const [showQuestion, setShowQuestion] = useState(false);
   const [answered, setAnswered] = useState(false);
   const [rejected, setRejected] = useState(false);
+  const [saidNo, setSaidNo] = useState(0);
   const [buttonPos, setButtonPos] = useState({ x: 0, y: 0 });
   const navigate = useNavigate();
 
@@ -16,8 +17,14 @@ export default function Proposal() {
   };
 
   const handleNo = () => {
+    setSaidNo(saidNo + 1);
     setRejected(true);
-    setTimeout(() => setRejected(false), 2000);
+    if(saidNo < 3){
+      setTimeout(() => setRejected(false), 2000);
+    }else{
+      setTimeout(() => navigate("/response?answer=no"), 3000);
+      setSaidNo(0);
+    }
   };
 
   const moveButton = () => {
@@ -100,7 +107,7 @@ export default function Proposal() {
               <h2 className="text-4xl md:text-5xl text-[#BE185D] font-[serif] mb-6">
                 Will you be my girlfriend? 🙏🏾🥹
               </h2>
-              <p className="text-xl text-[#BE185D] mb-8">
+              <p className="text-xl font-[Georgia] text-[#BE185D] mb-8">
                 I promise to always respect you, love you, and be there for you
                 every day.
               </p>

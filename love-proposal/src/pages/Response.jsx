@@ -47,7 +47,7 @@ export default function Response() {
               She Said Yes! ❤️
             </h1>
 
-            <p className="text-xl md:text-2xl text-[#BE185D] mb-12">
+            <p className="text-xl font-[Georgia] md:text-2xl text-[#BE185D] mb-12">
               I'm so happy to call you my girlfriend! I can't wait to make
               amazing memories together.
             </p>
@@ -86,15 +86,15 @@ export default function Response() {
                   <ul className="space-y-3 text-left">
                     <li className="flex items-center">
                       <FaHeart className="text-[#BE185D] mr-3" />
-                      <span>Watch your favorite movie</span>
+                      <span>Watch your favorite movie. 🥲</span>
                     </li>
                     <li className="flex items-center">
                       <FaHeart className="text-[#BE185D] mr-3" />
-                      <span>Take Couple pictures</span>
+                      <span>Take (Soft) Couple pictures.</span>
                     </li>
                     <li className="flex items-center">
                       <FaHeart className="text-[#BE185D] mr-3" />
-                      <span>Cook a meal together</span>
+                      <span>Add more memories together</span>
                     </li>
                   </ul>
                 </div>

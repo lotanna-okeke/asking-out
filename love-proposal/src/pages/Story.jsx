@@ -2,27 +2,27 @@ import { motion } from 'framer-motion'
 
 const timeline = [
   {
-    date: 'June 2023',
+    date: 'February 2025',
     title: 'We Met',
-    description: 'Our eyes met and I knew there was something special about you.',
+    description: '😂You proved you were not an igbo girl then tried to runaway from me.',
     icon: '👀',
   },
   {
-    date: 'July 2023',
-    title: 'First Hangout',
-    description: 'That coffee date that lasted hours because we couldn\'t stop talking.',
-    icon: '☕',
+    date: 'March 2025',
+    title: 'Exchanged Numbers',
+    description: 'We met again during clearance and I ask for your number. 😎',
+    icon: '📞',
   },
   {
-    date: 'August 2023',
-    title: 'First Movie Night',
-    description: 'You fell asleep on my shoulder during the movie and it was adorable.',
+    date: 'May 2025',
+    title: 'First Date',
+    description: 'You watched my favorite movie and liked it, while we cuddled. 🥹',
     icon: '🎬',
   },
   {
     date: 'Present',
     title: 'The Question',
-    description: 'The moment I ask you to be my girlfriend.',
+    description: '🫣This is where I ask you to be my girlfriend.',
     icon: '❤️',
   },
 ]
@@ -35,7 +35,7 @@ export default function Story() {
         animate={{ opacity: 1, y: 0 }}
         className="text-4xl md:text-6xl font-bold text-[#BE185D] text-center mb-12 font-[serif]"
       >
-        Our Story So Far
+        Our Love Story
       </motion.h1>
       
       <div className="max-w-3xl mx-auto">

@@ -3,12 +3,11 @@ import { useState } from 'react'
 import { assests } from '../assets/assets'
 
 const photos = [
-  { id: 1, src: assests.dummyPic, caption: 'Our first hangout' },
-  { id: 2, src: 'https://example.com/photo2.jpg', caption: 'That funny selfie we took' },
-  { id: 3, src: 'https://example.com/photo3.jpg', caption: 'Movie night' },
-  { id: 4, src: 'https://example.com/photo4.jpg', caption: 'Your birthday' },
-  { id: 5, src: 'https://example.com/photo5.jpg', caption: 'Day at the park' },
-  { id: 6, src: 'https://example.com/photo6.jpg', caption: 'Coffee date' },
+  { id: 1, src: assests.memories1, caption: 'When we met' },
+  { id: 2, src: assests.memories2, caption: 'Our first drive together' },
+  { id: 3, src: assests.memories3, caption: 'Work date' },
+  { id: 4, src: assests.memories4, caption: 'Shoprite outing' },
+  { id: 5, src: assests.memories5, caption: 'First soft launch' },
 ]
 
 export default function Memories() {
