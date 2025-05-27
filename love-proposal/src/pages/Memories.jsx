@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion'
-import { useState } from 'react'
+import { useState, useEffect } from 'react' // Import useEffect
 import { assests } from '../assets/assets'
 
 const photos = [
@@ -13,6 +13,11 @@ const photos = [
 export default function Memories() {
   const [selectedPhoto, setSelectedPhoto] = useState(null)
 
+  // Scroll to top when component mounts
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div className="py-12">
       <motion.h1
@@ -24,9 +29,12 @@ export default function Memories() {
       </motion.h1>
       
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 px-4">
-        {photos.map((photo) => (
+        {photos.map((photo, index) => ( // Added index for staggered animation
           <motion.div
             key={photo.id}
+            initial={{ opacity: 0, y: 20 }} // Initial animation state
+            animate={{ opacity: 1, y: 0 }}    // Final animation state
+            transition={{ duration: 0.5, delay: index * 0.1 }} // Staggered delay
             whileHover={{ scale: 1.03 }}
             className="relative overflow-hidden rounded-xl shadow-lg cursor-pointer"
             onClick={() => setSelectedPhoto(photo)}
