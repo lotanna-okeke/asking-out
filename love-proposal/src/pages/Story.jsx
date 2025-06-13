@@ -20,7 +20,7 @@ const timeline = [
     icon: '🎬',
   },
   {
-    date: 'Present',
+    date: 'May 2025',
     title: 'The Question',
     description: '🫣This is where I ask you to be my girlfriend.',
     icon: '❤️',
